@@ -4,7 +4,7 @@ import Landing from "../Landing/Landing";
 import Home from "../Home/Home";
 import ChatPage from "../ChatPage/ChatPage";
 import Nav from "../Nav/Nav";
-
+import Chatbot from "../ChatBot/ChatBot";
 const App = () => {
   // const chatPageRef = useRef(null);
 
@@ -18,6 +18,7 @@ const App = () => {
       {/* <Landing onPreventInteraction={handlePreventInteraction} /> */}
       <Landing />
       <Home />
+      <Chatbot />
       {/* <ChatPage /> */}
       {/* <ChatPage ref={chatPageRef} /> */}
     </div>
