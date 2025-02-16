@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+// import React, { useRef } from "react";
 import "./App.css";
 import Landing from "../Landing/Landing";
 import Home from "../Home/Home";
-import ChatPage from "../ChatPage/ChatPage";
+// import ChatPage from "../ChatPage/ChatPage";
 import Nav from "../Nav/Nav";
 import Chatbot from "../ChatBot/ChatBot";
 const App = () => {
