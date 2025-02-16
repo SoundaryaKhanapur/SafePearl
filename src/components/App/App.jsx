@@ -5,17 +5,18 @@ import Home from "../Home/Home";
 import ChatPage from "../ChatPage/ChatPage";
 
 const App = () => {
-  const chatPageRef = useRef(null);
+  // const chatPageRef = useRef(null);
 
-  const handlePreventInteraction = () => {
-    chatPageRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  // const handlePreventInteraction = () => {
+  //   chatPageRef.current?.scrollIntoView({ behavior: "smooth" });
+  // };
 
   return (
     <div className="app">
-      <Landing onPreventInteraction={handlePreventInteraction} />
+      {/* <Landing onPreventInteraction={handlePreventInteraction} /> */}
+      <Landing />
       <Home />
-      <ChatPage ref={chatPageRef} />
+      {/* <ChatPage ref={chatPageRef} /> */}
     </div>
   );
 };

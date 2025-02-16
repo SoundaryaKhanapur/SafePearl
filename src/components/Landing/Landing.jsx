@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import "./Landing.css";
 
-const Landing = ({ onPreventInteraction }) => {
+// const Landing = ({ onPreventInteraction }) => {
+const Landing = () => {
   const homeSectionRef = useRef(null);
 
   const handleStartInteraction = () => {
@@ -16,7 +17,7 @@ const Landing = ({ onPreventInteraction }) => {
         experience and we'll guide you to nearby organizations that can help.
       </p>
       <button onClick={handleStartInteraction}>Get Help Now</button>
-      <button onClick={onPreventInteraction}>Prevent Something</button>
+      {/* <button onClick={onPreventInteraction}>Prevention</button> */}
 
       <div ref={homeSectionRef}></div>
     </div>

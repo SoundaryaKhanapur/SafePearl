@@ -46,16 +46,10 @@ const Home = () => {
           const advice = await getOpenAIAdvice(inputText);
           setResponse(advice);
 
-          // const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY; // Add your API key here
-          // const radius = 5000; // Search within a 5km radius
-          // const keyword = "harassment support"; // Search keyword
-
-          // const apiUrl = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location.lat},${location.lng}&radius=${radius}&keyword=${keyword}&key=${apiKey}`;
-
           if (window.google && window.google.maps) {
             const map = new window.google.maps.Map(
               document.createElement("div")
-            ); // Dummy map
+            );
             const service = new window.google.maps.places.PlacesService(map);
 
             const request = {
@@ -63,15 +57,15 @@ const Home = () => {
                 location.lat,
                 location.lng
               ),
-              radius: 5000, // Search within a 5km radius
-              keyword: "harassment support", // Search keyword
+              radius: 5000,
+              keyword: "harassment support",
             };
 
             service.nearbySearch(request, (results, status) => {
               if (status === window.google.maps.places.PlacesServiceStatus.OK) {
-                console.log("Places API Response:", results); // Log Places API response
+                console.log("Places API Response:", results);
                 setOrganizations(results);
-                console.log("Organizations:", results); // Log organizations data
+                console.log("Organizations:", results);
               } else {
                 console.error("Places API Error:", status);
                 setError("No organizations found near your location.");
@@ -163,16 +157,17 @@ const Home = () => {
 
   const parseResponse = (response) => {
     const transformedResponse = response
-      .replace("### What Happened", "**Here's What Happened**")
-      .replace("### Encouragement", "**Please Don't Be Silent**")
-      .replace("### Coping Strategies", "**Here Are Coping Strategies**");
+      .replace("### Acknowledgment", "**We Hear You**")
+      .replace("### Encouragement", "**Encouragement**")
+      .replace("### Coping Strategies", "**Coping Strategies**")
+      .replace("### Next Steps", "**Next Steps**");
 
     const sections = transformedResponse.split("\n\n");
+
     return sections.map((section, index) => (
       <div key={index} className="response-section">
         {section.split("\n").map((line, i) => {
           if (line.startsWith("**")) {
-            // Style headings differently
             return (
               <h4 key={i} className="response-heading">
                 {line.replace(/\*\*/g, "")}
