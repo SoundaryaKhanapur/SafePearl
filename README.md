@@ -106,7 +106,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📬 Contact Us
 For support or feedback, reach out via:  
-🐙 GitHub Issues: [SafePearl Repo](https://github.com/your-repo/safepearl/issues)  
+🐙 GitHub Issues: [SafePearl Repo](https://github.com/SoundaryaKhanapur/SafePearl/issues)  
 
 ---
 
