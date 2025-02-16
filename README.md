@@ -1,7 +1,7 @@
-# Safe Pearl
+# SafePearl
 
 ## Introduction
-Safe Pearl is a web application designed to provide users with guidance and resources on harassment prevention, support, and reporting policies. It leverages AI-generated responses and Google Maps integration to help individuals find nearby support organizations and understand relevant policies.
+SafePearl is a web application designed to provide users with guidance and resources on harassment prevention, support, and reporting policies. It leverages AI-generated responses and Google Maps integration to help individuals find nearby support organizations and understand relevant policies.
 
 ## Features
 - **Chat-Based Guidance**: Users can enter scenarios to receive structured advice on harassment prevention.
@@ -16,7 +16,7 @@ Safe Pearl is a web application designed to provide users with guidance and reso
 ---
 
 ## Tech Stack
-- **Frontend**: React.js, CSS
+- **Frontend**: React.js, CSS, Bootstrap, HTML, JavaScript
 - **APIs Used**:
   - OpenAI API (GPT-4o)
   - Google Maps JavaScript API
@@ -24,7 +24,7 @@ Safe Pearl is a web application designed to provide users with guidance and reso
   - Google Generative AI (Gemini Pro)
 - **State Management**: React Hooks
 - **Routing**: React Router DOM
-- **Deployment**: TBD
+- **Deployment**: Netlify
 
 ---
 
@@ -41,3 +41,5 @@ Safe Pearl is a web application designed to provide users with guidance and reso
 ```sh
 git clone https://github.com/your-repo/safe-pearl.git
 cd safe-pearl
+npm install
+npm start
