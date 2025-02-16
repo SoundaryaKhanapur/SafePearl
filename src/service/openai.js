@@ -1,16 +1,14 @@
 import OpenAI from "openai";
 
-// Initialize the OpenAI client
 const openai = new OpenAI({
   apiKey: process.env.REACT_APP_OPENAI_API_KEY,
-  dangerouslyAllowBrowser: true, // Allow browser usage (required for React)
+  dangerouslyAllowBrowser: true,
 });
 
-// Function to get advice from OpenAI
 const getOpenAIAdvice = async (inputText) => {
   try {
     const response = await openai.chat.completions.create({
-      model: "gpt-4o-mini", // Use GPT-3.5 Turbo or GPT-4
+      model: "gpt-4o-mini",
       messages: [
         {
           role: "system",

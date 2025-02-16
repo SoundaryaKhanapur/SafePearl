@@ -1,0 +1,74 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fb6f92;
+  padding: 0.5rem 2rem;
+  color: #ffe5ec;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Navbar logo */
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Hamburger menu */
+.nav-menu {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.nav-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #ffe5ec;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  width: 180px;
+}
+
+.nav-menu:hover .nav-dropdown {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Dropdown menu items */
+.nav-dropdown li {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Dropdown links */
+.nav-dropdown a {
+  text-decoration: none;
+  color: #fb6f92;
+  font-size: 1.2rem;
+  display: block;
+}
+
+/* Hover effect for dropdown items */
+.nav-dropdown li:hover {
+  background-color: #ffe4e9;
+  border-radius: 5px;
+}

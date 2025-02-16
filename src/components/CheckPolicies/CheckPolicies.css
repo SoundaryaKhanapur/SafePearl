@@ -1,0 +1,87 @@
+/* Container for the Check Policies page */
+.check-policies-container {
+  text-align: center;
+  background-color: #ffe5ec;
+  padding: 40px 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Heading Style */
+.check-policies-container h2 {
+  font-size: 2.5rem;
+  color: #fb6f92;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Dropdown select box */
+select {
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border-color: #fb6f92;
+  border: 2px solid #fb6f92;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: #fb6f92;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Policy Details Box */
+.policy-details {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  border-color: #fb6f92;
+  border: 2px solid #fb6f92;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 80%;
+  text-align: left; /* Align left for better readability */
+  white-space: pre-line; /* Preserve spacing and line breaks */
+}
+
+/* Policy Text Styling */
+.policy-details p {
+  font-size: 1.2rem;
+  color: #fb6f92;
+  margin-bottom: 15px;
+  line-height: 1.6; /* Improves readability */
+}
+
+/* Make the steps more structured */
+.policy-details strong {
+  display: block;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: #fb6f92;
+}
+
+/* Policy Link Button */
+.policy-link {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #ff8fab;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  border-color: #fb6f92;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.policy-link:hover {
+  background-color: #fb6f92;
+}
