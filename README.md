@@ -42,5 +42,14 @@ SafePearl is a web application designed to provide users with guidance and resou
 git clone https://github.com/your-repo/safe-pearl.git
 cd safe-pearl
 npm install
+
+### Environment Variables
+```sh
+REACT_APP_OPENAI_API_KEY=your_openai_api_key
+REACT_APP_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+REACT_APP_GOOGLE_GENERATIVE_AI_API_KEY=your_generative_ai_key
 npm start
+
+Access the app at http://localhost:3000.
+
 
