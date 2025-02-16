@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "./Landing.css";
+import pearl from "../../assets/pearl.png";
 
 // const Landing = ({ onPreventInteraction }) => {
 const Landing = () => {
@@ -11,6 +12,7 @@ const Landing = () => {
 
   return (
     <div className="landing-page">
+      <img src={pearl} alt="Logo" className="logo" />
       <h2>Your Voice Matters. You Are Not Alone.</h2>
       <p>
         If you've faced harassment, you deserve support. <br /> Enter your

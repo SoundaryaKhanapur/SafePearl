@@ -12,6 +12,7 @@
   font-size: 3.5rem;
   color: #ff8fab;
   margin-bottom: 1px;
+  margin-top: 2px;
 }
 
 .landing-page p {
@@ -37,4 +38,9 @@
   display: none;
   text-align: center;
   margin-top: 40px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
 }
