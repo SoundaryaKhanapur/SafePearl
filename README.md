@@ -17,8 +17,8 @@ Harassment is a deeply pervasive issue that leaves victims feeling helpless, unh
 - **OpenAI API** to generate compassionate, structured responses tailored to survivors of harassment.  
 - **Google Maps Places API** to find nearby harassment support centers.  
 - **Google Maps API** to display an interactive map with pinned organizations.  
-- **React Hooks, HTML, CSS, JavaScript** to bring all components together into a functional prototype.  
-
+- **Flask, React Hooks, HTML, CSS, JavaScript, Python** to bring all components together into a functional prototype.  
+- ** Link to Backend Repo** - https://github.com/soubhi/SafePearls-backend
 ---
 
 ## ⚠️ Challenges We Ran Into
