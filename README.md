@@ -13,13 +13,46 @@ Harassment is a deeply pervasive issue that leaves victims feeling helpless, unh
 ---
 
 ## 🏗️ How We Built It
-- **React.js** for a smooth and interactive user experience.  
-- **OpenAI API** to generate compassionate, structured responses tailored to survivors of harassment.  
-- **Google Maps Places API** to find nearby harassment support centers.  
-- **Google Maps API** to display an interactive map with pinned organizations.  
-- **Flask, React Hooks, HTML, CSS, JavaScript, Python** to bring all components together into a functional prototype.  
-- **Link to Backend Repo** - https://github.com/soubhi/SafePearls-backend
----
+🔹 Frontend (React.js + API Integrations)
+
+Our React.js frontend ensures a smooth and interactive user experience, enabling seamless conversations and real-time support.
+
+Key Features:
+React.js for a modern, responsive UI.
+React Hooks to manage chatbot state and session data.
+Google Maps API to display nearby harassment support centers on an interactive map.
+Voice Input & Text-to-Speech (future integration) to improve accessibility.
+Progressive Web App (PWA) Support for mobile accessibility.
+
+🔹 Backend (Flask + OpenAI + Google APIs)
+
+The backend powers PearlSafe's AI capabilities, chat memory, and safety information retrieval.
+
+Tech Stack:
+Flask as the lightweight and efficient backend.
+Google Gemini API & OpenAI API for AI-powered conversational responses.
+Cloudflare KV (or Firebase/Redis) for ephemeral chat session storage.
+Google Maps Places API for real-time location-based safety recommendations.
+Flask-CORS to allow secure cross-origin API calls.
+Key Backend Functionalities:
+✅ Session Management:
+
+Generates a unique session ID per user.
+Stores temporary conversation context for better chat continuity.
+✅ AI-Powered Responses:
+
+Calls Google Gemini API for structured, compassionate responses tailored to sensitive topics.
+Handles rejection filtering (ensuring AI does not generate unsafe content).
+✅ Real-Time Safety Features:
+
+Integrates Google Maps API to fetch verified safety centers near a user’s location.
+Supports location-based alerts for high-risk areas (future feature).
+✅ Security & Privacy:
+
+Uses Cloudflare Workers to handle API requests securely.
+Allows session expiration & auto-delete for privacy.
+Plans to implement encryption for sensitive conversations.
+🔗 Backend Repository: GitHub - [SafePearls-backend](https://github.com/soubhi/SafePearls-backend)
 
 ## ⚠️ Challenges We Ran Into
 Building a platform for such a **sensitive and urgent issue** came with challenges:  
